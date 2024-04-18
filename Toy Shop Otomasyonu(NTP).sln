@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toy Shop Otomasyonu(NTP)", "Toy Shop Otomasyonu(NTP)\Toy Shop Otomasyonu(NTP).csproj", "{A79DF90D-22A3-470B-8B9A-011C8B702CEB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A79DF90D-22A3-470B-8B9A-011C8B702CEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A79DF90D-22A3-470B-8B9A-011C8B702CEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A79DF90D-22A3-470B-8B9A-011C8B702CEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A79DF90D-22A3-470B-8B9A-011C8B702CEB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E111BD5D-514C-4354-83E8-2549A03B1F31}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://dev.azure.com/mahmuttunahan0029
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Toy\u0020Shop\u0020Otomasyonu(NTP)\\Toy\u0020Shop\u0020Otomasyonu(NTP).csproj
+		SccProjectName1 = Toy\u0020Shop\u0020Otomasyonu(NTP)
+		SccLocalPath1 = Toy\u0020Shop\u0020Otomasyonu(NTP)
+	EndGlobalSection
+EndGlobal

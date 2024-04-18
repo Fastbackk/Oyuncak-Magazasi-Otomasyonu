@@ -1,0 +1,517 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A79DF90D-22A3-470B-8B9A-011C8B702CEB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Toy_Shop_Otomasyonu_NTP_</RootNamespace>
+    <AssemblyName>Toy Shop Otomasyonu%28NTP%29</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CircularProgressBar, Version=2.8.0.16, Culture=neutral, PublicKeyToken=310fd07b25df79b3, processorArchitecture=MSIL">
+      <HintPath>..\packages\CircularProgressBar.2.8.0.16\lib\net40\CircularProgressBar.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WinFormAnimation, Version=1.6.0.4, Culture=neutral, PublicKeyToken=310fd07b25df79b3, processorArchitecture=MSIL">
+      <HintPath>..\packages\WinFormAnimation.1.6.0.4\lib\net40\WinFormAnimation.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdventureTimeListwiev.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdventureTimeListwiev.Designer.cs">
+      <DependentUpon>AdventureTimeListwiev.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdventureTimeOyuncakları.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdventureTimeOyuncakları.Designer.cs">
+      <DependentUpon>AdventureTimeOyuncakları.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlisverisGecmisi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlisverisGecmisi.Designer.cs">
+      <DependentUpon>AlisverisGecmisi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AnaSayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnaSayfa.Designer.cs">
+      <DependentUpon>AnaSayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AnlikAlisveris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnlikAlisveris.Designer.cs">
+      <DependentUpon>AnlikAlisveris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ben10Listwiev.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ben10Listwiev.Designer.cs">
+      <DependentUpon>Ben10Listwiev.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ben1Oyuncaklari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ben1Oyuncaklari.Designer.cs">
+      <DependentUpon>Ben1Oyuncaklari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FrozenListwiev.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrozenListwiev.Designer.cs">
+      <DependentUpon>FrozenListwiev.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrozenOyuncakları.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrozenOyuncakları.Designer.cs">
+      <DependentUpon>FrozenOyuncakları.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hakkinda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hakkinda.Designer.cs">
+      <DependentUpon>Hakkinda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KategoriDuzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KategoriDuzenle.Designer.cs">
+      <DependentUpon>KategoriDuzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kategoriler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kategoriler.Designer.cs">
+      <DependentUpon>Kategoriler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MusteriGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MusteriGiris.Designer.cs">
+      <DependentUpon>MusteriGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MusteriHesapOlustur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MusteriHesapOlustur.Designer.cs">
+      <DependentUpon>MusteriHesapOlustur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Musteriler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Musteriler.Designer.cs">
+      <DependentUpon>Musteriler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MusteriSatisGorme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MusteriSatisGorme.Designer.cs">
+      <DependentUpon>MusteriSatisGorme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs" />
+    <Compile Include="SatisEkkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SatisEkkle.Designer.cs">
+      <DependentUpon>SatisEkkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sepet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sepet.Designer.cs">
+      <DependentUpon>Sepet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SifreYenileme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SifreYenileme.Designer.cs">
+      <DependentUpon>SifreYenileme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StarWarsListwiev.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StarWarsListwiev.Designer.cs">
+      <DependentUpon>StarWarsListwiev.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Toy_Shop_OtomasyonuDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Toy_Shop_OtomasyonuDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Toy_Shop_OtomasyonuDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Toy_Shop_OtomasyonuDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Toy_Shop_OtomasyonuDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Toy_Shop_OtomasyonuDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Toy_Shop_OtomasyonuDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Toy_Shop_OtomasyonuDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Toy_Shop_OtomasyonuDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Toy_Shop_OtomasyonuDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UrunİsmiDuzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UrunİsmiDuzenle.Designer.cs">
+      <DependentUpon>UrunİsmiDuzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Yonetici.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yonetici.Designer.cs">
+      <DependentUpon>Yonetici.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Yorum oku.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yorum oku.Designer.cs">
+      <DependentUpon>Yorum oku.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Yorum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yorum.Designer.cs">
+      <DependentUpon>Yorum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YorumYonetici.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YorumYonetici.Designer.cs">
+      <DependentUpon>YorumYonetici.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YuklemeEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YuklemeEkrani.Designer.cs">
+      <DependentUpon>YuklemeEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GirisEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GirisEkrani.Designer.cs">
+      <DependentUpon>GirisEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminGiris.Designer.cs">
+      <DependentUpon>AdminGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OyuncakYakından_inceleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OyuncakYakından_inceleme.Designer.cs">
+      <DependentUpon>OyuncakYakından_inceleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Personel_kayitDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Personel_kayitDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SQLbaglanti.cs" />
+    <Compile Include="StarWarsOyuncaklari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StarWarsOyuncaklari.Designer.cs">
+      <DependentUpon>StarWarsOyuncaklari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Toy_Shop_OtomasyonuDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Toy_Shop_OtomasyonuDataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdventureTimeListwiev.resx">
+      <DependentUpon>AdventureTimeListwiev.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdventureTimeOyuncakları.resx">
+      <DependentUpon>AdventureTimeOyuncakları.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlisverisGecmisi.resx">
+      <DependentUpon>AlisverisGecmisi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnaSayfa.aa.resx">
+      <DependentUpon>AnaSayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnaSayfa.resx">
+      <DependentUpon>AnaSayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnlikAlisveris.resx">
+      <DependentUpon>AnlikAlisveris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ben10Listwiev.resx">
+      <DependentUpon>Ben10Listwiev.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ben1Oyuncaklari.resx">
+      <DependentUpon>Ben1Oyuncaklari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrozenListwiev.resx">
+      <DependentUpon>FrozenListwiev.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrozenOyuncakları.resx">
+      <DependentUpon>FrozenOyuncakları.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hakkinda.resx">
+      <DependentUpon>Hakkinda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KategoriDuzenle.resx">
+      <DependentUpon>KategoriDuzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kategoriler.resx">
+      <DependentUpon>Kategoriler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MusteriGiris.resx">
+      <DependentUpon>MusteriGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MusteriHesapOlustur.resx">
+      <DependentUpon>MusteriHesapOlustur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Musteriler.resx">
+      <DependentUpon>Musteriler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MusteriSatisGorme.resx">
+      <DependentUpon>MusteriSatisGorme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SatisEkkle.resx">
+      <DependentUpon>SatisEkkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sepet.resx">
+      <DependentUpon>Sepet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SifreYenileme.resx">
+      <DependentUpon>SifreYenileme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StarWarsListwiev.resx">
+      <DependentUpon>StarWarsListwiev.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UrunİsmiDuzenle.resx">
+      <DependentUpon>UrunİsmiDuzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yonetici.resx">
+      <DependentUpon>Yonetici.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yorum oku.resx">
+      <DependentUpon>Yorum oku.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yorum.resx">
+      <DependentUpon>Yorum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YorumYonetici.resx">
+      <DependentUpon>YorumYonetici.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YuklemeEkrani.resx">
+      <DependentUpon>YuklemeEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GirisEkrani.resx">
+      <DependentUpon>GirisEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminGiris.resx">
+      <DependentUpon>AdminGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OyuncakYakından_inceleme.resx">
+      <DependentUpon>OyuncakYakından_inceleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StarWarsOyuncaklari.resx">
+      <DependentUpon>StarWarsOyuncaklari.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Personel_kayitDataSet.xsc">
+      <DependentUpon>Personel_kayitDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Personel_kayitDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Personel_kayitDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Personel_kayitDataSet.xss">
+      <DependentUpon>Personel_kayitDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Toy_Shop_OtomasyonuDataSet.xsc">
+      <DependentUpon>Toy_Shop_OtomasyonuDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Toy_Shop_OtomasyonuDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Toy_Shop_OtomasyonuDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Toy_Shop_OtomasyonuDataSet.xss">
+      <DependentUpon>Toy_Shop_OtomasyonuDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Toy_Shop_OtomasyonuDataSet1.xsc">
+      <DependentUpon>Toy_Shop_OtomasyonuDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Toy_Shop_OtomasyonuDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Toy_Shop_OtomasyonuDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Toy_Shop_OtomasyonuDataSet1.xss">
+      <DependentUpon>Toy_Shop_OtomasyonuDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Toy_Shop_OtomasyonuDataSet2.xsc">
+      <DependentUpon>Toy_Shop_OtomasyonuDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Toy_Shop_OtomasyonuDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Toy_Shop_OtomasyonuDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Toy_Shop_OtomasyonuDataSet2.xss">
+      <DependentUpon>Toy_Shop_OtomasyonuDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Toy_Shop_OtomasyonuDataSet3.xsc">
+      <DependentUpon>Toy_Shop_OtomasyonuDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Toy_Shop_OtomasyonuDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Toy_Shop_OtomasyonuDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Toy_Shop_OtomasyonuDataSet3.xss">
+      <DependentUpon>Toy_Shop_OtomasyonuDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Toy_Shop_OtomasyonuDataSet4.xsc">
+      <DependentUpon>Toy_Shop_OtomasyonuDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Toy_Shop_OtomasyonuDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Toy_Shop_OtomasyonuDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Toy_Shop_OtomasyonuDataSet4.xss">
+      <DependentUpon>Toy_Shop_OtomasyonuDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Toy_Shop_OtomasyonuDataSet5.xsc">
+      <DependentUpon>Toy_Shop_OtomasyonuDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Toy_Shop_OtomasyonuDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Toy_Shop_OtomasyonuDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Toy_Shop_OtomasyonuDataSet5.xss">
+      <DependentUpon>Toy_Shop_OtomasyonuDataSet5.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adv.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\starwars.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Baby Yoda.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\darth vader.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bd-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\star wrs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\obiwan.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lightsaber.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chewbacca.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\altınlı olan.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="indir.png" />
+    <Content Include="indir1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
